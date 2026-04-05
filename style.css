@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+}
+
+#bgVideo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+}
+
+.container {
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+#map {
+  height: 300px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+}
+
+.footer-box {
+  width: 250px;
+  margin: 10px;
+}
+
+.social i {
+  font-size: 25px;
+  margin: 10px;
+}
+
+@media(max-width:600px){
+  .container {
+    width: 90%;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

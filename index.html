@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop id="bgVideo">
+  <source src="videos/clear.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+
+  <!-- MAIN CARD -->
+  <div class="container glass">
+
+    <h1>🌦 Weather App</h1>
+
+    <!-- ONLY CITY INPUT -->
+    <input type="text" id="city" placeholder="Enter city / state name">
+    <button onclick="getWeather()">Search</button>
+
+    <div id="weatherResult"></div>
+
+  </div>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-box">
+      <h2>About App</h2>
+      <p>This app shows live weather, map and dynamic background.</p>
+    </div>
+
+    <div class="footer-box">
+      <h2>Feedback</h2>
+      <textarea id="feedback" placeholder="Write feedback..."></textarea>
+      <button onclick="submitFeedback()">Submit</button>
+    </div>
+
+    <div class="footer-box">
+      <h2>City Info</h2>
+      <p id="userInfo">City: -</p>
+    </div>
+
+    <div class="footer-box">
+      <h2>Connect</h2>
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <p><a href="#">Affiliate Link</a></p>
+    </div>
+
+  </footer>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>
