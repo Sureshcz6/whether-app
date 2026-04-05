@@ -30,3 +30,23 @@ A modern and responsive weather web application that shows real-time weather dat
 ---
 
 ## 📂 Project Structure
+
+---weather-app/
+│
+├── index.html
+├── style.css
+├── script.js
+├── config.js
+└── videos/
+├── rain.mp4
+├── clear.mp4
+└── clouds.mp4
+
+## ⚙️ Setup Instructions
+
+1. Clone or download this repository
+2. Open the project folder
+3. Add your API key in `config.js`
+
+```js
+const API_KEY = "YOUR_API_KEY_HERE";
